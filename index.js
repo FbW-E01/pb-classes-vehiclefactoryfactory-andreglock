@@ -7,11 +7,11 @@ function factoryFactory(typeOfFactory) {
     }
 }
 
-var carFactory = factoryFactory('Car');
-var bicycleFactory = factoryFactory('Bicycle');
-var boatFactory = factoryFactory('Boat');
-var blimpFactory = factoryFactory('Blimp');
-var trainFactory = factoryFactory('Train');
+let carFactory = factoryFactory('Car');
+let bicycleFactory = factoryFactory('Bicycle');
+let boatFactory = factoryFactory('Boat');
+let blimpFactory = factoryFactory('Blimp');
+let trainFactory = factoryFactory('Train');
 
 const garage = [];
 
@@ -27,3 +27,6 @@ garage.push(new blimpFactory('Zeppelin', 'NT', 2000));
 garage.push(new trainFactory('Hokkaido', 'Shinkanzen', 1981));
 
 garage.forEach(vehicle => console.log(vehicle));
+
+console.log(`carFactory is ${typeof(carFactory)}, an item created is ${typeof(garage[0])}`);
+//The factories are functions that create objects.
