@@ -1,5 +1,5 @@
-function factoryFactory(typeOfFactory) {
-    return function(make, model, year, type = typeOfFactory) {
+function factoryFactory(type) {
+    return function(make, model, year) {
             this.make = make;
             this.model = model;
             this.year = year;
